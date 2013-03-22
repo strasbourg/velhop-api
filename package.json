@@ -1,0 +1,23 @@
+{
+  "name": "velhop",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "dependencies": {
+    "coffee-script": "~1.6.2",
+    "express": "~3.1.0",
+    "request": "~2.16.6",
+    "xml2js": "~0.2.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.2.x"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "gitHead": "6b776685e8c87880705d291af56c47e4492a582e"
+}
