@@ -1,6 +1,7 @@
 express = require 'express'
 request = require 'request'
 parseString = require('xml2js').parseString
+logRequest = require('./log_request').logRequest
 
 URL = 'http://velhop.strasbourg.eu/tvcstations.xml'
 
@@ -8,7 +9,7 @@ app = express()
 
 app.get '/', (req, res) -> res.redirect('/stations')
 
-app.get '/stations', (req, res) ->
+app.get '/stations', logRequest, (req, res) ->
   request
     url: URL
     (e, r, body) ->
